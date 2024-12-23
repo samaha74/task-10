@@ -1,0 +1,85 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-size: 100vw 100vh;
+    backdrop-filter: brightness(0.7);
+    background-repeat: no-repeat;
+    background-image: url(../image/benjamin-voros-phIFdC6lA4E-unsplash.jpg);
+}
+main{
+    padding-top: 5%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    color: aliceblue;
+    h1{
+        text-align: center;
+        max-width: 40%;
+        font-weight: lighter;
+    }
+    p{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 10px;
+        text-align: center;
+        max-width: 25%;
+        opacity: 0.7;
+        margin: 10px;
+    }
+    button{
+        font-size: 8px;
+        padding: 10px 30px;
+        background-color: red;
+        border:none;
+        border-radius: 2px;
+        color: aliceblue;
+    }
+    .bottom{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2%;
+        flex-wrap: wrap;
+        margin-top: 3%;
+        width: 100%;
+        .box{
+            display:flex;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgba(225, 222, 222, 0.1);
+            backdrop-filter: blur(5px);
+            width: 25%;
+            aspect-ratio: 2/1;
+            padding: 1%;
+            border-radius: 10px;
+            flex-direction: column;
+            gap: 10%;
+            p{
+                text-align: left;
+                max-width: 70%;
+                font-size: 8px;
+            }
+            a{
+                font-size: 10px;
+                color: aliceblue;
+                text-decoration: none;
+                border-bottom: red solid 2px;
+                max-width: fit-content;
+                padding-top: 7%;
+                transition: 0.4S;
+            }
+            i{
+                position: absolute;
+                right:10px;
+                color: red;
+                font-size: 17px;
+            }
+            a:hover{
+                font-size:15px
+            }
+        }
+    }
+}
